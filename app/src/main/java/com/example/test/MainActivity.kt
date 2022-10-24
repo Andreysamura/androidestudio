@@ -116,7 +116,7 @@ fun Component() {
                         Image(
                             painter = painterResource(id = R.drawable.pulmones),
                             contentDescription = "ima1",
-                            modifier = Modifier.size(60.dp)
+                            modifier = Modifier.size(70.dp)
                         )
 
                         Text(
@@ -145,7 +145,7 @@ fun Component() {
                         Image(
                             painter = painterResource(id = R.drawable.covid),
                             contentDescription = "ima1",
-                            modifier = Modifier.size(60.dp)
+                            modifier = Modifier.size(70.dp)
                         )
                         Text(
                             text = "Permiso COVID 4.0",
@@ -176,7 +176,7 @@ fun Component() {
                         Image(
                             painter = painterResource(id = R.drawable.calendario),
                             contentDescription = "ima1",
-                            modifier = Modifier.size(60.dp)
+                            modifier = Modifier.size(70.dp)
                         )
                         Text(
                             text = "Cita medica familiar",
@@ -204,7 +204,7 @@ fun Component() {
                         Image(
                             painter = painterResource(id = R.drawable.corazon),
                             contentDescription = "ima1",
-                            modifier = Modifier.size(60.dp),
+                            modifier = Modifier.size(70.dp),
                         )
                         Text(
                             text = "CHKT en linea",
@@ -234,7 +234,7 @@ fun Component() {
                         Image(
                             painter = painterResource(id = R.drawable.informe),
                             contentDescription = "ima1",
-                            modifier = Modifier.size(60.dp)
+                            modifier = Modifier.size(70.dp)
                         )
                         Text(
                             text = "Vigencia de derechos",
@@ -262,7 +262,7 @@ fun Component() {
                         Image(
                             painter = painterResource(id = R.drawable.localizacion),
                             contentDescription = "ima1",
-                            modifier = Modifier.size(60.dp)
+                            modifier = Modifier.size(70.dp)
                         )
                         Text(
                             text = "Alta o cambio de clinica",
@@ -292,7 +292,7 @@ fun Component() {
                         Image(
                             painter = painterResource(id = R.drawable.ayuda),
                             contentDescription = "ima1",
-                            modifier = Modifier.size(60.dp)
+                            modifier = Modifier.size(70.dp)
                         )
                         Text(
                             text = "Informate de tu familiar",
@@ -320,7 +320,7 @@ fun Component() {
                         Image(
                             painter = painterResource(id = R.drawable.licencia),
                             contentDescription = "ima1",
-                            modifier = Modifier.size(60.dp)
+                            modifier = Modifier.size(70.dp)
                         )
                         Text(
                             text = "Licencia 140 Bis",
