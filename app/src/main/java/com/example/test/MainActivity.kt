@@ -10,7 +10,12 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
+import androidx.compose.material.Icon
 import androidx.compose.material.Text
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.materialIcon
+import androidx.compose.material.icons.outlined.KeyboardArrowLeft
+import androidx.compose.material.icons.outlined.List
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -36,337 +41,48 @@ class MainActivity : ComponentActivity() {
 fun Component() {
     Box(
         modifier = Modifier
-            .fillMaxSize()
-            .border(2.dp, color = Color.Black)
-    ) {
-        Box(
-            modifier = Modifier
-                .padding(top = 4.dp, start = 4.dp, end = 4.dp, bottom = 5.dp)
-                .background(color = Color(0xFF1F5520))
-        ) {
-            Box(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(120.dp)
-            ) {
-                Text(
-                    text = "IMSS Digital",
-                    modifier = Modifier
-                        .padding(top = 10.dp, start = 20.dp)
-                        .align(Alignment.TopStart),
-                    fontSize = 30.sp,
-                    color = Color.White,
-                    fontWeight = FontWeight(900)
-
-                    )
-                Text(
-                    text = "Bienvenido",
-                    modifier = Modifier
-                        .padding(top = 52.dp, bottom = 25.dp, start = 20.dp)
-                        .align(Alignment.BottomStart),
-                    fontSize = 20.sp,
-                    fontWeight = FontWeight(300),
-                    color = Color.White
-                )
-
-                Text(
-                    text = "Consulta",
-                    modifier = Modifier
-                        .padding(top = 10.dp, end = 25.dp)
-                        .align(Alignment.TopEnd),
-                    fontSize = 21.sp,
-                    fontWeight = FontWeight(300),
-                    color = Color.White
-                    )
-                Text(
-                    text = "NSS",
-                    modifier = Modifier
-                        .width(80.dp)
-                        .padding(top = 40.dp, end = 30.dp)
-                        .clip(CircleShape)
-                        .align(Alignment.CenterEnd)
-                        .background(Color.White),
-                    fontSize = 20.sp,
-                    fontWeight = FontWeight(900),
-                    color = Color.Black,
-                    textAlign = TextAlign.Center
-                )
-            }
-        }
+            .fillMaxSize()  //ocupa todo el entorno de prewivi
+            .padding(all = 5.dp) //una reduccion
+            .background(Color.Black)
+    ){
         Column(
-            modifier = Modifier
-                .paddingFromBaseline(top = 220.dp),
-            verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            Row(
-                modifier = Modifier
-                    .paddingFromBaseline(top = 10.dp),
-                horizontalArrangement = Arrangement.Center,
-            ) {
-                Card (
-                    elevation = 8.dp,
-                    shape = RoundedCornerShape(8.dp)
-                ) {
-                Column(
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    verticalArrangement = Arrangement.Center,
-                ) {
-
-                        Image(
-                            painter = painterResource(id = R.drawable.pulmones),
-                            contentDescription = "ima1",
-                            modifier = Modifier.size(70.dp)
-                        )
-
-                        Text(
-                            text = "Modulo Atencion Respiratoria (MARSS)",
-                            modifier = Modifier
-                                .width(180.dp)
-                                .height(60.dp),
-                            fontSize = 18.sp,
-                            fontWeight = FontWeight(600),
-                            textAlign = TextAlign.Center
-                        )
-                    }
-                }
-                Spacer(
-                    modifier = Modifier
-                        .padding(start = 10.dp)
-                )
-                Card (
-                    elevation = 8.dp,
-                    shape = RoundedCornerShape(8.dp)
-                ) {
-                    Column(
-                        horizontalAlignment = Alignment.CenterHorizontally,
-                        verticalArrangement = Arrangement.Center,
-                    ) {
-                        Image(
-                            painter = painterResource(id = R.drawable.covid),
-                            contentDescription = "ima1",
-                            modifier = Modifier.size(70.dp)
-                        )
-                        Text(
-                            text = "Permiso COVID 4.0",
-                            modifier = Modifier
-                                .width(180.dp)
-                                .height(60.dp),
-                            fontSize = 18.sp,
-                            fontWeight = FontWeight(600),
-                            textAlign = TextAlign.Center
-                        )
-                    }
-                }
-            }
-
-            Row(
-                modifier = Modifier
-                    .paddingFromBaseline(top = 100.dp),
-                horizontalArrangement = Arrangement.Center
-            ) {
-                Card (
-                    elevation = 8.dp,
-                    shape = RoundedCornerShape(8.dp)
-                ) {
-                    Column(
-                        horizontalAlignment = Alignment.CenterHorizontally,
-                        verticalArrangement = Arrangement.Center,
-                    ) {
-                        Image(
-                            painter = painterResource(id = R.drawable.calendario),
-                            contentDescription = "ima1",
-                            modifier = Modifier.size(70.dp)
-                        )
-                        Text(
-                            text = "Cita medica familiar",
-                            modifier = Modifier
-                                .width(180.dp)
-                                .height(60.dp),
-                            fontSize = 18.sp,
-                            fontWeight = FontWeight(600),
-                            textAlign = TextAlign.Center
-                        )
-                    }
-                }
-                Spacer(
-                    modifier = Modifier
-                        .padding(start = 10.dp)
-                )
-                Card (
-                    elevation = 8.dp,
-                    shape = RoundedCornerShape(8.dp)
-                ) {
-                    Column(
-                        horizontalAlignment = Alignment.CenterHorizontally,
-                        verticalArrangement = Arrangement.Center,
-                    ) {
-                        Image(
-                            painter = painterResource(id = R.drawable.corazon),
-                            contentDescription = "ima1",
-                            modifier = Modifier.size(70.dp),
-                        )
-                        Text(
-                            text = "CHKT en linea",
-                            modifier = Modifier
-                                .width(180.dp)
-                                .height(60.dp),
-                            fontSize = 18.sp,
-                            fontWeight = FontWeight(600),
-                            textAlign = TextAlign.Center
-                        )
-                    }
-                }
-            }
-            Row(
-                modifier = Modifier
-                    .paddingFromBaseline(top = 100.dp),
-                horizontalArrangement = Arrangement.Center
-            ) {
-                Card (
-                    elevation = 8.dp,
-                    shape = RoundedCornerShape(8.dp)
-                ) {
-                    Column(
-                        horizontalAlignment = Alignment.CenterHorizontally,
-                        verticalArrangement = Arrangement.Center,
-                    ) {
-                        Image(
-                            painter = painterResource(id = R.drawable.informe),
-                            contentDescription = "ima1",
-                            modifier = Modifier.size(70.dp)
-                        )
-                        Text(
-                            text = "Vigencia de derechos",
-                            modifier = Modifier
-                                .width(180.dp)
-                                .height(60.dp),
-                            fontSize = 18.sp,
-                            fontWeight = FontWeight(600),
-                            textAlign = TextAlign.Center
-                        )
-                    }
-                }
-                Spacer(
-                    modifier = Modifier
-                        .padding(start = 10.dp)
-                )
-                Card (
-                    elevation = 8.dp,
-                    shape = RoundedCornerShape(8.dp)
-                ) {
-                    Column(
-                        horizontalAlignment = Alignment.CenterHorizontally,
-                        verticalArrangement = Arrangement.Center,
-                    ) {
-                        Image(
-                            painter = painterResource(id = R.drawable.localizacion),
-                            contentDescription = "ima1",
-                            modifier = Modifier.size(70.dp)
-                        )
-                        Text(
-                            text = "Alta o cambio de clinica",
-                            modifier = Modifier
-                                .width(180.dp)
-                                .height(60.dp),
-                            fontSize = 18.sp,
-                            fontWeight = FontWeight(600),
-                            textAlign = TextAlign.Center
-                        )
-                    }
-                }
-            }
-            Row(
-                modifier = Modifier
-                    .paddingFromBaseline(top = 100.dp),
-                horizontalArrangement = Arrangement.Center
-            ) {
-                Card (
-                    elevation = 8.dp,
-                    shape = RoundedCornerShape(8.dp)
-                ) {
-                    Column(
-                        horizontalAlignment = Alignment.CenterHorizontally,
-                        verticalArrangement = Arrangement.Center,
-                    ) {
-                        Image(
-                            painter = painterResource(id = R.drawable.ayuda),
-                            contentDescription = "ima1",
-                            modifier = Modifier.size(70.dp)
-                        )
-                        Text(
-                            text = "Informate de tu familiar",
-                            modifier = Modifier
-                                .width(180.dp)
-                                .height(60.dp),
-                            fontSize = 18.sp,
-                            fontWeight = FontWeight(600),
-                            textAlign = TextAlign.Center
-                        )
-                    }
-                }
-                Spacer(
-                    modifier = Modifier
-                        .padding(start = 10.dp)
-                )
-                Card (
-                    elevation = 8.dp,
-                    shape = RoundedCornerShape(8.dp)
-                ) {
-                    Column(
-                        horizontalAlignment = Alignment.CenterHorizontally,
-                        verticalArrangement = Arrangement.Center,
-                    ) {
-                        Image(
-                            painter = painterResource(id = R.drawable.licencia),
-                            contentDescription = "ima1",
-                            modifier = Modifier.size(70.dp)
-                        )
-                        Text(
-                            text = "Licencia 140 Bis",
-                            modifier = Modifier
-                                .width(180.dp)
-                                .height(60.dp),
-                            fontSize = 18.sp,
-                            fontWeight = FontWeight(600),
-                            textAlign = TextAlign.Center
-                        )
-                    }
-                }
-            }
+                modifier = Modifier.fillMaxSize(),
+                horizontalAlignment = Alignment.CenterHorizontally
+    ) {
             Spacer(
-                modifier = Modifier
-                    .padding(bottom = 10.dp)
+                modifier = Modifier.padding(top = 10.dp)
             )
-            Row(
-                modifier = Modifier.fillMaxWidth()
-                    ,
-                horizontalArrangement = Arrangement.Center,
-                verticalAlignment = Alignment.CenterVertically
-            ){
-                Box(
+            Card(
+                elevation = 8.dp,
+                shape = RoundedCornerShape(8.dp),
+                modifier = Modifier
+                    .width(350.dp)
+                    .height(150.dp)
+            ) {
+                Row(
                     modifier = Modifier
-                        .fillMaxWidth(),
-                    contentAlignment = Alignment.Center
-                ) {
-                    Image(
-                        painter = painterResource(id = R.drawable.cas),
-                        contentDescription = "ima1",
-                        modifier = Modifier.size(90.dp)
-                            .align(Alignment.CenterStart)
-                            .padding(start = 45.dp)
-                    )
-                    Image(
-                        painter = painterResource(id = R.drawable.localization),
-                        contentDescription = "ima1",
+                        .padding(all = 15.dp),
+                    horizontalArrangement = Arrangement.SpaceBetween
+                )
+                {
+                    Icon(
+                        imageVector = Icons.Outlined.KeyboardArrowLeft,
+                        contentDescription = "ada",
                         modifier = Modifier.size(50.dp)
                     )
-                    Image(
-                        painter = painterResource(id = R.drawable.calendary),
-                        contentDescription = "ima1",
-                        modifier = Modifier.size(90.dp)
-                            .align(Alignment.CenterEnd)
-                            .padding(end = 45.dp)
+                    Icon(
+                        imageVector = Icons.Outlined.List,
+                        contentDescription = "ada",
+                        modifier = Modifier.size(50.dp)
+                    )
+                }
+                Box {
+                    Text(
+                        "5555-6666-7777-6534",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .align(Alignment.Center)
+                            .border(1.dp, Color.Black)
                     )
                 }
             }
