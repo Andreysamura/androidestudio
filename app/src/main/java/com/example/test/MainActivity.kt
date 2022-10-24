@@ -47,6 +47,7 @@ fun Component() {
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
+                    .height(120.dp)
             ) {
                 Text(
                     text = "IMSS Digital",
@@ -61,7 +62,7 @@ fun Component() {
                 Text(
                     text = "Bienvenido",
                     modifier = Modifier
-                        .padding(top = 52.dp, bottom = 10.dp, start = 20.dp)
+                        .padding(top = 52.dp, bottom = 25.dp, start = 20.dp)
                         .align(Alignment.BottomStart),
                     fontSize = 20.sp,
                     fontWeight = FontWeight(300),
@@ -94,7 +95,7 @@ fun Component() {
         }
         Column(
             modifier = Modifier
-                .paddingFromBaseline(top = 205.dp),
+                .paddingFromBaseline(top = 220.dp),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
@@ -122,7 +123,7 @@ fun Component() {
                             text = "Modulo Atencion Respiratoria (MARSS)",
                             modifier = Modifier
                                 .width(180.dp)
-                                .height(75.dp),
+                                .height(60.dp),
                             fontSize = 18.sp,
                             fontWeight = FontWeight(600),
                             textAlign = TextAlign.Center
@@ -150,7 +151,7 @@ fun Component() {
                             text = "Permiso COVID 4.0",
                             modifier = Modifier
                                 .width(180.dp)
-                                .height(75.dp),
+                                .height(60.dp),
                             fontSize = 18.sp,
                             fontWeight = FontWeight(600),
                             textAlign = TextAlign.Center
@@ -181,7 +182,7 @@ fun Component() {
                             text = "Cita medica familiar",
                             modifier = Modifier
                                 .width(180.dp)
-                                .height(70.dp),
+                                .height(60.dp),
                             fontSize = 18.sp,
                             fontWeight = FontWeight(600),
                             textAlign = TextAlign.Center
@@ -209,7 +210,7 @@ fun Component() {
                             text = "CHKT en linea",
                             modifier = Modifier
                                 .width(180.dp)
-                                .height(70.dp),
+                                .height(60.dp),
                             fontSize = 18.sp,
                             fontWeight = FontWeight(600),
                             textAlign = TextAlign.Center
@@ -233,7 +234,7 @@ fun Component() {
                         Image(
                             painter = painterResource(id = R.drawable.informe),
                             contentDescription = "ima1",
-                            modifier = Modifier.size(70.dp)
+                            modifier = Modifier.size(60.dp)
                         )
                         Text(
                             text = "Vigencia de derechos",
@@ -267,7 +268,7 @@ fun Component() {
                             text = "Alta o cambio de clinica",
                             modifier = Modifier
                                 .width(180.dp)
-                                .height(70.dp),
+                                .height(60.dp),
                             fontSize = 18.sp,
                             fontWeight = FontWeight(600),
                             textAlign = TextAlign.Center
@@ -297,7 +298,7 @@ fun Component() {
                             text = "Informate de tu familiar",
                             modifier = Modifier
                                 .width(180.dp)
-                                .height(70.dp),
+                                .height(60.dp),
                             fontSize = 18.sp,
                             fontWeight = FontWeight(600),
                             textAlign = TextAlign.Center
@@ -325,7 +326,7 @@ fun Component() {
                             text = "Licencia 140 Bis",
                             modifier = Modifier
                                 .width(180.dp)
-                                .height(70.dp),
+                                .height(60.dp),
                             fontSize = 18.sp,
                             fontWeight = FontWeight(600),
                             textAlign = TextAlign.Center
@@ -351,21 +352,21 @@ fun Component() {
                     Image(
                         painter = painterResource(id = R.drawable.cas),
                         contentDescription = "ima1",
-                        modifier = Modifier.size(80.dp)
+                        modifier = Modifier.size(90.dp)
                             .align(Alignment.CenterStart)
-                            .padding(start = 40.dp)
+                            .padding(start = 45.dp)
                     )
                     Image(
                         painter = painterResource(id = R.drawable.localization),
                         contentDescription = "ima1",
-                        modifier = Modifier.size(45.dp)
+                        modifier = Modifier.size(50.dp)
                     )
                     Image(
                         painter = painterResource(id = R.drawable.calendary),
                         contentDescription = "ima1",
-                        modifier = Modifier.size(85.dp)
+                        modifier = Modifier.size(90.dp)
                             .align(Alignment.CenterEnd)
-                            .padding(end = 40.dp)
+                            .padding(end = 45.dp)
                     )
                 }
             }
